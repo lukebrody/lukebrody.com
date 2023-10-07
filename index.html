@@ -19,6 +19,24 @@
 	    h1, h2, h3 {
 	        line-height: 1.2;
 	    }
+	    
+	    @media print {
+	    	body {
+		        margin: 0px auto;
+		        line-height: 1.6;
+		        font-size: 14px;
+		        color: black;
+		        padding: 0 10px;
+		        font-family: Arial;
+		        background-color: white;
+	    	}
+	    	
+	    	.pagebreak { page-break-before: always; }
+	    	
+	    	a:visited {
+  				color: rgb(0, 0, 238);
+			}
+	    }
     </style>
 </head>
 <body>
@@ -119,9 +137,10 @@
     		building an entire <a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">CRDT</a> framework to support collaborative editing. Running a business.
     	</li>
     </ul>
-    
-    
+   	
+    <div class="pagebreak"> </div>    
     <hr>
+       
     <h2>
     	Fun Side Projects
     </h2>
