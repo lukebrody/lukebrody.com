@@ -1,47 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<base target="_blank" />
-    <title>Luke Brody</title>
-    <style type="text/css">
-	    body {
-	        margin: 40px auto;
-	        max-width: 650px;
-	        line-height: 1.6;
-	        font-size: 18px;
-	        color: #444;
-	        padding: 0 10px;
-	        font-family: Arial;
-	        background-color: #fdfdfd;
-	    }
+	<title>Luke Brody</title>
+	<style type="text/css">
+		body {
+			margin: 40px auto;
+			max-width: 650px;
+			line-height: 1.6;
+			font-size: 18px;
+			color: #444;
+			padding: 0 10px;
+			font-family: Arial;
+			background-color: #fdfdfd;
+		}
 	
-	    h1, h2, h3 {
-	        line-height: 1.2;
-	    }
-	    
-	    @media print {
-	    	body {
-		        margin: 0px auto;
-		        line-height: 1.6;
-		        font-size: 14px;
-		        color: black;
-		        padding: 0 10px;
-		        font-family: Arial;
-		        background-color: white;
-	    	}
-	    	
-	    	.pagebreak { page-break-before: always; }
-	    	
-	    	a:visited {
-  				color: rgb(0, 0, 238);
+		h1, h2, h3 {
+			line-height: 1.2;
+			position: relative;
+		}
+
+		.project:has(:target) {
+			background-color: #ffa;
+		}
+		
+		@media print {
+			body {
+				margin: 1cm;
+				line-height: 1.6;
+				font-size: 14px;
+				color: black;
+				font-family: Arial;
+				background-color: white;
 			}
-	    }
-    </style>
+						
+			a:visited {
+				  color: rgb(0, 0, 238);
+			}
+
+			.project {
+				page-break-inside: avoid;
+			}
+		}
+	</style>
 </head>
 <body>
-    <header>
+	<header>
 		<div style="display:flex;">
 			<div>
 				<h1>
@@ -60,263 +66,281 @@
 					<b>Education:</b> BA Computer Science, UC Berkeley
 				</p>
 			</div>
-			<img src="images/portrait.jpg" alt="Headshot of Luke Brody" style="border-radius:50%;width:200px;height:200px;margin:auto;"/>
+			<img src="images/portrait.jpg" alt="Headshot of Luke Brody" style="border-radius:50%;width:180px;height:180px;margin:auto;padding:20px"/>
 		</div>
-    </header>
-    
-    
-    <hr>
-    <h2>Business Projects</h2>
-
-	<h3>
-    	<a href="https://www.alteryx.com/designer-cloud-looker">
-    		Alteryx Analytics Cloud &harr; Looker Studio Connector</a>
-    	(2023)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			Looker Studio users use Alteryx Analytics Cloud to upload Excel Files, Prep and Blend their data
-    	</li>
-    	<li>
-    		<b>Who?</b>
-    		Tech lead for a team of 5 engineers.
-    	</li>
-    	<li>
-    		<b>Why?</b>
-    		Drive <i>Acquisition</i> for product-led <a href="https://builtin.com/growth-hacking/aarrr">Growth</a>.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		Drives high-quality sales leads. Provides value to users.
-    	</li>
-    	<li>
-    		<b>Proud of</b>
-    		designing a clean and developer-friendly system to solve a non-standard problem. Showing leadership in using technical solutions to solve user problems.
-    	</li>
-		<li>
-			<b>Technologies:</b>
-			JavaScript, TypeScript, Node.js, Google Apps Script, React, Redux, PactFlow, DataDog, Gitlab CI, GCP, TestCafe, Redis
-		</li>
-    </ul>
+	</header>
 	
-    <h3>
-    	<a href="https://us1.alteryxcloud.com/register">
-    		Alteryx Analytics Cloud Public Trial</a>
-    	(2022-2023)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			Self-service signup to trial Alteryx's suite of cloud analytics products.
-			30 day trial. Export compliance. Reach out to sales and support. Trial extension.
-    	</li>
-    	<li>
-    		<b>Who?</b>
-    		Tech lead for a team of 4 engineers. Worked collaboratively with other teams to include their products in the trial. Worked cross-functionally with marketing, sales, legal.
-    	</li>
-    	<li>
-    		<b>Why?</b>
-    		Drive product-led <a href="https://builtin.com/growth-hacking/aarrr">Growth</a>.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		Drives 1000 high-quality sales leads/month. Key contributor to sales.
-    	</li>
-    	<li>
-    		<b>Proud of</b>
-    		quickly ramping up in a new organization and delivering.
-    	</li>
-		<li>
-			<b>Technologies: </b>
-			JavaScript, TypeScript, Node.js, React, DataDog, Microservice Architecture, Java, PostgreSQL, MySQL
-		</li>
-    </ul>
-    
-    <h3>
-    	<a href="https://clamshellinc.com">
-    		Clamshell</a>
-    	(2020-2022)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			Startup making construction project accounting software.
-    	</li>
-    	<li>
-    		<b>Who?</b>
-    		Technical co-founder. Worked with two experienced construction execs to dogfood at their company. I built a webapp from the ground up, then worked closely with users to refine the experience.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		Clamshell manages $300 million worth of projects that bring in $80 million in annual revenue. Clamshell allows the same number of employees to accomplish more with less stress. Thanks to robust automation and thoughtful design, Clamshell has reliability operated for 2 years with minimal effort required for upkeep.
-    	</li>
-    	<li>
-    		<b>Proud of</b>
-    		keeping design + infra simple to allow dev time for features.
-    	</li>
-		<li>
-			<b>Technologies: </b>
-			Scala, JavaScript, Ansible, Linux, Apache POI, MySQL
-		</li>
-    </ul>
-    
-    <h3>
-    	<a href="https://pavonine.co/teleprompter"/>
-    		Teleprompter</a>
-    	(2011-2019)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			<a href="https://en.wikipedia.org/wiki/Teleprompter">
+	
+	<hr>
+	<h2>Business Projects</h2>
+
+	<div class="project">
+		<h3>
+			<a id="aacLooker" href="https://www.alteryx.com/designer-cloud-looker">
+				Alteryx Analytics Cloud &harr; Looker Studio Connector</a>
+			(2023)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				Looker Studio users use Alteryx Analytics Cloud to upload Excel Files, Prep and Blend their data
+			</li>
+			<li>
+				<b>Who?</b>
+				Tech lead for a team of 5 engineers.
+			</li>
+			<li>
+				<b>Why?</b>
+				Drive <i>Acquisition</i> for product-led <a href="https://builtin.com/growth-hacking/aarrr">Growth</a>.
+			</li>
+			<li>
+				<b>Results:</b>
+				Drives high-quality sales leads. Provides value to users.
+			</li>
+			<li>
+				<b>Proud of</b>
+				designing a clean and developer-friendly system to solve a non-standard problem. Showing leadership in using technical solutions to solve user problems.
+			</li>
+			<li>
+				<b>Technologies:</b>
+				JavaScript, TypeScript, Node.js, Google Apps Script, React, Redux, PactFlow, DataDog, Gitlab CI, GCP, TestCafe, Redis
+			</li>
+		</ul>
+	</div>
+	
+	<div class="project">
+		<h3>
+			<a id="aacTrial" href="https://us1.alteryxcloud.com/register">
+				Alteryx Analytics Cloud Public Trial</a>
+			(2022-2023)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				Self-service signup to trial Alteryx's suite of cloud analytics products.
+				30 day trial. Export compliance. Reach out to sales and support. Trial extension.
+			</li>
+			<li>
+				<b>Who?</b>
+				Tech lead for a team of 4 engineers. Worked collaboratively with other teams to include their products in the trial. Worked cross-functionally with marketing, sales, legal.
+			</li>
+			<li>
+				<b>Why?</b>
+				Drive product-led <a href="https://builtin.com/growth-hacking/aarrr">Growth</a>.
+			</li>
+			<li>
+				<b>Results:</b>
+				Drives 1000 high-quality sales leads/month. Key contributor to sales.
+			</li>
+			<li>
+				<b>Proud of</b>
+				quickly ramping up in a new organization and delivering.
+			</li>
+			<li>
+				<b>Technologies: </b>
+				JavaScript, TypeScript, Node.js, React, DataDog, Microservice Architecture, Java, PostgreSQL, MySQL
+			</li>
+		</ul>
+	</div>
+	
+	<div class="project">
+		<h3>
+			<a id="clamshell" href="https://clamshellinc.com">
+				Clamshell</a>
+			(2020-2022)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				Startup making construction project accounting software.
+			</li>
+			<li>
+				<b>Who?</b>
+				Technical co-founder. Worked with two experienced construction execs to dogfood at their company. I built a webapp from the ground up, then worked closely with users to refine the experience.
+			</li>
+			<li>
+				<b>Results:</b>
+				Clamshell manages $300 million worth of projects that bring in $80 million in annual revenue. Clamshell allows the same number of employees to accomplish more with less stress. Thanks to robust automation and thoughtful design, Clamshell has reliability operated for 2 years with minimal effort required for upkeep.
+			</li>
+			<li>
+				<b>Proud of</b>
+				keeping design + infra simple to allow dev time for features.
+			</li>
+			<li>
+				<b>Technologies: </b>
+				Scala, JavaScript, Ansible, Linux, Apache POI, MySQL
+			</li>
+		</ul>
+	</div>
+	
+	<div class="project">
+		<h3>
+			<a id="teleprompter" href="https://pavonine.co/teleprompter"/>
 				Teleprompter</a>
-			software for Mac & iOS. Incredibly feature rich (see the marketing website).
-    	</li>
-    	<li>
-    		<b>Who?</b>
-    		Solo developer/businessperson. Built the whole thing + marketing + customer support.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		Over 20k units sold to date. Used by customers in various industries. (Entertainment, real estate, religion, etc.)
-    	</li>
-    	<li>
-    		<b>Proud of</b>
-    		building an entire <a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">CRDT</a> framework to support collaborative editing. Running a business.
-    	</li>
-		<li>
-			<b>Technologies: </b>
-			Swift, Objective-C, Xcode, CRDT, Metal
-		</li>
-    </ul>
-   	
-    <div class="pagebreak"> </div>    
-    <hr>
-       
-    <h2>
-    	Fun Side Projects
-    </h2>
+			(2011-2019)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				<a href="https://en.wikipedia.org/wiki/Teleprompter">
+					Teleprompter</a>
+				software for Mac & iOS. Incredibly feature rich (see the marketing website).
+			</li>
+			<li>
+				<b>Who?</b>
+				Solo developer/businessperson. Built the whole thing + marketing + customer support.
+			</li>
+			<li>
+				<b>Results:</b>
+				Over 20k units sold to date. Used by customers in various industries. (Entertainment, real estate, religion, etc.)
+			</li>
+			<li>
+				<b>Proud of</b>
+				building an entire <a href="https://en.wikipedia.org/wiki/Conflict-free_replicated_data_type">CRDT</a> framework to support collaborative editing. Running a business.
+			</li>
+			<li>
+				<b>Technologies: </b>
+				Swift, Objective-C, Xcode, CRDT, Metal
+			</li>
+		</ul>
+	</div>
+	   
+	<hr>
+	   
+	<h2>
+		Fun Side Projects
+	</h2>
 
-	<h3>
-    	<a href="https://urbanstats.org">urbanstats.org</a>
-    	(2024)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			Website that compiles demographic data about the USA. Previously this data was fragmented across the internet.
-    	</li>
-		<li>
-    		<b>Who?</b>
-    		My friend <a href="https://github.com/kavigupta">Kavi</a> created the site, I hopped on to help with DevOps, React, and UX challenges.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		50k monthly users.
-    	</li>
-    	<li>
-    		<b>Proud of</b> fast and reliable e2e test pipeline. Rewrite in TypeScript.
-		</li>
-		<li>
-			<b>Technologies: </b>
-			TypeScript, React, Python, Github Actions, Docker
-		</li>
-    </ul>
+	<div class="project">
+		<h3>
+			<a id="urbanstats" href="https://urbanstats.org">urbanstats.org</a>
+			(2024)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				Website that compiles demographic data about the USA. Previously this data was fragmented across the internet.
+			</li>
+			<li>
+				<b>Who?</b>
+				My friend <a href="https://github.com/kavigupta">Kavi</a> created the site, I hopped on to help with DevOps, React, and UX challenges.
+			</li>
+			<li>
+				<b>Results:</b>
+				50k monthly users.
+			</li>
+			<li>
+				<b>Proud of</b> fast and reliable e2e test pipeline. Rewrite in TypeScript.
+			</li>
+			<li>
+				<b>Technologies: </b>
+				TypeScript, React, Python, Github Actions, Docker
+			</li>
+		</ul>
+	</div>
 
-    <h3>
-    	<a href="https://draw.fish">draw.fish</a>
-    	(2022)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			Collaborative drawing webapp. End-to-end encrypted. Infinite canvas. Supports text editing.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		Useful tool for myself that I use often.
-    	</li>
-    	<li>
-    		<b>Proud of</b> being able to immediately create a polished UX in an unfamiliar ecosystem.
-    	</li>
-		<li>
-			<b>Technologies: </b>
-			TypeScript, React, Node.js, PostgreSQL, Y.js, Quill
-		</li>
-    </ul>
+	<div class="project">
+		<h3>
+			<a id="drawfish" href="https://draw.fish">draw.fish</a>
+			(2022)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				Collaborative drawing webapp. End-to-end encrypted. Infinite canvas. Supports text editing.
+			</li>
+			<li>
+				<b>Results:</b>
+				Useful tool for myself that I use often.
+			</li>
+			<li>
+				<b>Proud of</b> being able to immediately create a polished UX in an unfamiliar ecosystem.
+			</li>
+			<li>
+				<b>Technologies: </b>
+				TypeScript, React, Node.js, PostgreSQL, Y.js, Quill
+			</li>
+		</ul>
+	</div>
 
-    <h3>
-    	<a href="https://todo.business">todo.business</a>
-    	(2023)
-    </h3>
-    <ul>
-    	<li>
-			<b>What?</b>
-			Collaborative TODO webapp with notes. Drag to rearrange.
-    	</li>
-    	<li>
-    		<b>Results:</b>
-    		Indespensible personal tool.
-    	</li>
-    	<li>
-    		<b>Proud of</b> the two libraries I created to help with this project: 
-    		<a href="https://github.com/lukebrody/yeeql"/>
-    			<b>yeeql</b></a>
-    		and 
-    		<a href="https://github.com/lukebrody/simple-react-transition"/>
-    			<b>simple-react-transition</b></a>
-    	</li>
-		<li>
-			<b>Technologies: </b>
-			TypeScript, React, Node.js, PostgreSQL, Y.js, CSS
-		</li>
-    </ul>
-    
-    
-    <hr>
-    <h2>Key Skills</h2>
-    <ul>
-    	<li>
-    		Able to effectively take a project "from <b>zero to hero</b>". 
-    		(Evidenced by creating Teleprompter, Clamshell, draw.fish)
-    	</li>
-    	<li>
-    		Quickly able to <b>learn new technologies</b>.
-    		(Evidenced by picking up Scala for Clamshell, 
-    		TypeScript+React+Node for draw.fish, onboarding quickly at Alteryx)
-    	</li>
-    	<li>
-    		Able to <b>develop deep knowledge</b> about technologies. 
-    		(Evidenced by mastery of notoriously finicky Mac + iOS development for Teleprompter)
-    	</li>
-    	<li>
-    		Able to <b>develop flexible + maintainable designs</b>. 
-    		(Evidenced by continued maintenance + many Teleprompter feature updates, Clamshell requirements changing often during development.)
-    	</li>
-    	<li>
-    		Conquer <b>hard technical problems</b>. 
-    		(Developing CRDT algorithms for Teleprompter, Geometry problems for draw.fish)
-    	</li>
-    	<li>
-    		<b>Be a leader.</b> 
-    		Work with other developers, plan projects, and prioritize delivery of features. 
-    		(Alteryx)
-    	</li>
-    </ul>
-    
-    
-    <hr>
-    <h2>Book Recommendations</h2>
-    <ul>
-    	<li>
-    		<a href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201">
-    		<i>A Philosophy of Software Design</i></a> by John Ousterhout
-    	</li>
-    	<li>
-    		<a href="https://www.amazon.com/Debugging-Indispensable-Software-Hardware-Problems/dp/0814474578">
-    		<i>Debugging</i></a> by David J Agans
-    	</li>
-    </ul>
+	<div class="project">
+		<h3>
+			<a id="todoBusiness" href="https://todo.business">todo.business</a>
+			(2023)
+		</h3>
+		<ul>
+			<li>
+				<b>What?</b>
+				Collaborative TODO webapp with notes. Drag to rearrange.
+			</li>
+			<li>
+				<b>Results:</b>
+				Indespensible personal tool.
+			</li>
+			<li>
+				<b>Proud of</b> the two libraries I created to help with this project: 
+				<a href="https://github.com/lukebrody/yeeql"/>
+					<b>yeeql</b></a>
+				and 
+				<a href="https://github.com/lukebrody/simple-react-transition"/>
+					<b>simple-react-transition</b></a>
+			</li>
+			<li>
+				<b>Technologies: </b>
+				TypeScript, React, Node.js, PostgreSQL, Y.js, CSS
+			</li>
+		</ul>
+	</div>
+	
+	<hr>
+
+	<div class="project">
+		<h2>Key Skills</h2>
+		<ul>
+			<li>
+				Able to effectively take a project "from <b>zero to hero</b>". 
+				(Evidenced by creating Teleprompter, Clamshell, draw.fish)
+			</li>
+			<li>
+				Quickly able to <b>learn new technologies</b>.
+				(Evidenced by picking up Scala for Clamshell, 
+				TypeScript+React+Node for draw.fish, onboarding quickly at Alteryx)
+			</li>
+			<li>
+				Able to <b>develop deep knowledge</b> about technologies. 
+				(Evidenced by mastery of notoriously finicky Mac + iOS development for Teleprompter)
+			</li>
+			<li>
+				Able to <b>develop flexible + maintainable designs</b>. 
+				(Evidenced by continued maintenance + many Teleprompter feature updates, Clamshell requirements changing often during development.)
+			</li>
+			<li>
+				Conquer <b>hard technical problems</b>. 
+				(Developing CRDT algorithms for Teleprompter, Geometry problems for draw.fish)
+			</li>
+			<li>
+				<b>Be a leader.</b> 
+				Work with other developers, plan projects, and prioritize delivery of features. 
+				(Alteryx)
+			</li>
+		</ul>
+	</div>
+	
+	<hr>
+
+	<div class="project">
+		
+		<h2><a id="books">Book Recommendations</a></h2>
+		<ul>
+			<li>
+				<a href="https://www.amazon.com/Philosophy-Software-Design-John-Ousterhout/dp/1732102201">
+				<i>A Philosophy of Software Design</i></a> by John Ousterhout
+			</li>
+			<li>
+				<a href="https://www.amazon.com/Debugging-Indispensable-Software-Hardware-Problems/dp/0814474578">
+				<i>Debugging</i></a> by David J Agans
+			</li>
+		</ul>
+	</div>
 </body>
 </html>
